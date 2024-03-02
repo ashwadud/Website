@@ -1,0 +1,18 @@
+section {
+    background-color:var(--color-darkgrey);
+}
+
+.notfound__container {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.notfound__container .btn {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.notfound__container h2 {
+    color: var(--color-grey);
+}

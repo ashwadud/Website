@@ -1,0 +1,78 @@
+.robots__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.card.robot {
+    padding: 1rem;
+}
+
+.robot__img {
+    border-radius: 0 2rem;
+    overflow: hidden;
+}
+
+.robot h3 {
+    margin-top: 2rem;
+    transition: var(--transition);
+}
+
+.robot h4 {
+    margin-top: 0.5rem;
+    transition: var(--transition);
+}
+
+.robot p {
+    margin-top: 0.5rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.robots_docs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.robots_docs a {
+    font-size: 1.5rem;
+    width: 3.5rem;
+    background: var(--color-darkgrey);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    transition: var(--transition);
+}
+
+.robot:hover a {
+    background: var(--color-primary);
+}
+
+.robot:hover h3, .robot:hover h4, .robot:hover p {
+    color: var(--color-black);
+}
+
+/* Media Queries for Medium Screens */
+
+@media screen and (max-width: 1024px) {
+    .robots__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+/* Media Queries for Small Screens */
+
+@media screen and (max-width: 600px) {
+    .robots__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card.robot {
+        width: 90%;
+        margin-inline: auto;
+    }
+}
